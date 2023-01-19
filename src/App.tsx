@@ -26,18 +26,18 @@ function App():JSX.Element {
   return (
     <div className="App h-screen w-full flex-col sm:grid-rows-3">
           <div className="App-header h-[10%] w-full"> 
-            <div className='flex-row h-full justify-center items-center  w-full'>
-                <Label className="h-[50%] justify-center font-bold items-center w-[90%] flex  text-2xl text-black">JUGUETERIA ASPERIA</Label> 
+            <div className='flex-row h-full justify-center items-center bg-[#F3EFE0]  w-full'>
+                <Label className="h-[50%] justify-center font-bold items-center w-[100%] flex  text-2xl text-black">JUGUETERIA ASPERIA</Label> 
             </div>
           </div>
           {
           optionNew
           ?
-          <div className='h-[90%] w-[full] flex justify-center items-center'>
+          <div className='h-[90%] bg-[#F3EFE0] w-[full] flex justify-center items-center'>
             <ViewListProduct/>
           </div>
           :
-          <div className='h-[90%] w-[full] flex flex-col justify-center items-center'>
+          <div className='h-[90%] bg-[#F3EFE0] w-[full] flex flex-col justify-center items-center'>
             <FormProduct></FormProduct>
           </div>
           }
