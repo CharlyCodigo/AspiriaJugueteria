@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# El rpyecto se creo con create-react-app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Procedimineto
 
-In the project directory, you can run:
+-Se crean las carpetas correspondientes en este caso Atomos, Molecules y una carpeta para el uso de Contexto, demas de la configuracion de tailwind y typescript, para aplicar los estilos directamente por medio de clases y para el tipado respectivamente.
 
-### `npm start`
+-Se analiza el maquetado y considerando el modelo atomico se consideran a los botones mas simples (input y label) como atomos, por lo cual se crean esos componentes para que estos puedan ser reutilizados, ademas se implementa el uso de Typescript para que estos solo acepten los tipos asignados dentro de su paso de propiedades en este caso "string" y "number" y asi controlamos el tipado de los productos y controlamos la validacion.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-el siguiente componente es "ViewListProduct" esta es la primera vista en la que se ve la tabla de los productos que se van a crear, este a su ves necesita el componente producto en el cual se visualiza las diferentes propiedades del producto "id, nombre, descripcion, minimo de años, compañia y precio", este se renderiza y se reutiliza en dicho componente en la parte del folder de moleculas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Se crea un nuevo componente para el formulario llamado "FormProduct" que es renderizado cada vez que se le da "click" al boton "new" de la vista "ViewListProduct", tambien es reutilizado cuando se le da "click" a el boton "edit".
 
-### `npm test`
+-Hasta este punto se empieza a utilizar el contexto para poder compartir el objeto "product", ademas del array "ListProduct" que contiene todos los productos generados y con base a esto se realice la renderizacion por medio de un mapeo, ademas se comparten "estados" que se generaron para saber en que estatus nos encontrabamos si se estaba creando un nuevo producto o se estaba editando.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Se colocaron dos imputs debajo de cada boton (edit, delete) ya que se necesitaba un "id" para saber que producto deberia de ser eliminado y que producto se necesitaba editar.
 
-### `npm run build`
+-Considerando el tamaño del producto no se generaron ramas para su desarrollo, quiza mi metodo seria generar una rama para cada modulo, siendo un modulo una molecula, pero dada la poca complejidad decidi no utilizarlo, sin embargo en ese sentido he hecho uso de los comandos "add .","commit", "pull", "push","status", "merge", "checkout" y he solucionado conflictos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Me disculpo por no haber terminado el proyecto en su totalidad pero no tuve el tiempo suficiente por cuestiones personales, de antemano muchas gracias por la oportunidad, se que quiza no sirva de nada pero soy una persona inteligente que sabe investigar y se aprende las cosas muy rapido asi que solo necesito la oportunidad para poder demostrar que en poco tiempo me adaptare a lo que se necesite aprender muchas gracias.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para ejecutar presione npm start

@@ -55,19 +55,26 @@ function ViewListProduct():JSX.Element{
                     <Button 
                     onClick={editProduct}
                     className=" h-[50%] w-[50%] bg-sky-800">Edit</Button>
-                    <Input 
-                    onChange={(e:ChangeEvent<HTMLInputElement>)=>getValueIdEdit(e.target.valueAsNumber)}
-                    type="number" 
-                    className="h-[40%] w-[50%] border-black border-[1px] mt-[2px]"></Input>
+                    <div className='flex flex-row w-[50%] h-[40%]'>
+                        <Label className="text-xl flex items-center mr-2">Id</Label>
+                        <Input 
+                        onChange={(e:ChangeEvent<HTMLInputElement>)=>getValueIdEdit(e.target.valueAsNumber)}
+                        type="number" 
+                        className="h-[100%] w-[70%] border-black border-[1px] mt-[2px]"></Input> 
+                    </div>
+                    
                 </div>
                 <div className='h-[100%] w-1/6 flex justify-center bg-[#497174] items-center flex-col border-[1px] border-black border-solid'>
                     <Button 
                     onClick={delProduct}
                     className=" h-[50%] w-[50%] bg-sky-800">Delete</Button>
-                    <Input 
-                    onChange={(e:ChangeEvent<HTMLInputElement>)=>getValueId(e.target.valueAsNumber)}
-                    type="number" 
-                    className="h-[40%] w-[50%] border-black border-[1px] mt-[2px]"></Input>
+                    <div className='flex flex-row w-[50%] h-[40%]'>
+                        <Label className="text-xl flex items-center mr-2">Id</Label>
+                        <Input 
+                        onChange={(e:ChangeEvent<HTMLInputElement>)=>getValueId(e.target.valueAsNumber)}
+                        type="number" 
+                        className="h-[100%] w-[70%] border-black border-[1px] mt-[2px]"></Input> 
+                    </div>
                     
                 </div>
             </div>
