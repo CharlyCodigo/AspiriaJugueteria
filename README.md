@@ -1,4 +1,4 @@
-# El rpyecto se creo con create-react-app
+# El proyecto se creo con create-react-app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
