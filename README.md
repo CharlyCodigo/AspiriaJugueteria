@@ -16,6 +16,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 -Se colocaron dos imputs debajo de cada boton (edit, delete) ya que se necesitaba un "id" para saber que producto deberia de ser eliminado y que producto se necesitaba editar.
 
--Considerando el tamaño del producto no se generaron ramas para su desarrollo, quiza mi metodo seria generar una rama para cada modulo, siendo un modulo una molecula, pero dada la poca complejidad decidi no utilizarlo, sin embargo en ese sentido he hecho uso de los comandos "add .","commit", "pull", "push","status", "merge", "checkout" y he solucionado conflictos.
 
 Para ejecutar presione npm start
