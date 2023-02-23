@@ -1,4 +1,4 @@
-# El rpyecto se creo con create-react-app
+# El proyecto se creo con create-react-app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -16,8 +16,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 -Se colocaron dos imputs debajo de cada boton (edit, delete) ya que se necesitaba un "id" para saber que producto deberia de ser eliminado y que producto se necesitaba editar.
 
--Considerando el tamaño del producto no se generaron ramas para su desarrollo, quiza mi metodo seria generar una rama para cada modulo, siendo un modulo una molecula, pero dada la poca complejidad decidi no utilizarlo, sin embargo en ese sentido he hecho uso de los comandos "add .","commit", "pull", "push","status", "merge", "checkout" y he solucionado conflictos.
-
-Me disculpo por no haber terminado el proyecto en su totalidad pero no tuve el tiempo suficiente por cuestiones personales, de antemano muchas gracias por la oportunidad, se que quiza no sirva de nada pero soy una persona inteligente que sabe investigar y se aprende las cosas muy rapido asi que solo necesito la oportunidad para poder demostrar que en poco tiempo me adaptare a lo que se necesite aprender muchas gracias.
 
 Para ejecutar presione npm start
