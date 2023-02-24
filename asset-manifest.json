@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AspiriaJugueteria/static/css/main.35c4f2cb.css",
+    "main.js": "/AspiriaJugueteria/static/js/main.c95d60ab.js",
+    "index.html": "/AspiriaJugueteria/index.html",
+    "main.35c4f2cb.css.map": "/AspiriaJugueteria/static/css/main.35c4f2cb.css.map",
+    "main.c95d60ab.js.map": "/AspiriaJugueteria/static/js/main.c95d60ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35c4f2cb.css",
+    "static/js/main.c95d60ab.js"
+  ]
+}
